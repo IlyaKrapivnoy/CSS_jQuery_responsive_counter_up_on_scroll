@@ -15,8 +15,21 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- waypoints -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- counter up -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
   </head>
   <body>
+    <div class="home-img"></div>
     <div class="wrapper">
       <div class="title">Responsive Counter Up Animation HTML, CSS, jQuery</div>
       <p>
@@ -83,5 +96,14 @@
         </div>
       </div>
     </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".counter").counterUp({
+          delay: 10,
+          time: 1200,
+        });
+      });
+    </script>
   </body>
 </html>
